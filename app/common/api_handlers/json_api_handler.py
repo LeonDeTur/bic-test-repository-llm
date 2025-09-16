@@ -17,7 +17,7 @@ class JSONAPIHandler:
             None
         """
 
-        self.__name__ = "UrbanAPIGateway"
+        self.__name__ = "JSONAPIHandler"
         self.base_url = base_url.rstrip("/")
 
     @staticmethod
@@ -153,7 +153,7 @@ class JSONAPIHandler:
             url=url,
             headers=headers,
             params=params,
-            data=data,
+            json=data,
         ) as response:
             result = await self._check_response_status(response)
             if not result:
@@ -199,7 +199,7 @@ class JSONAPIHandler:
             url=url,
             headers=headers,
             params=params,
-            data=data,
+            json=data,
         ) as response:
             result = await self._check_response_status(response)
             if not result:
@@ -245,7 +245,7 @@ class JSONAPIHandler:
             url=url,
             headers=headers,
             params=params,
-            data=data,
+            json=data,
         ) as response:
             result = await self._check_response_status(response)
             if not result:
