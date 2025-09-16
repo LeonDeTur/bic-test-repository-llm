@@ -185,4 +185,7 @@ fabric.properties
 .idea
 
 # env
-.env.*
+.env
+
+#jupiter notebooks
+*.ipynb
